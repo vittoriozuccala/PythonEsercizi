@@ -1,0 +1,22 @@
+{% extends "index.html"%} {% block content %} {% if nome_corso == 'flask' %}
+<h2>Questo è il corso di {{ nome_corso }}</h2>
+<p>Elenco lezioni</p>
+<ul class="list-group">
+  <li class="list-group-item active" aria-current="true">Lezione1</li>
+</ul>
+<br />
+<a href="{{url_for('corsi',name='lista')}}">Lista dei corsi</a>
+
+{% elif nome_corso == 'lista' %}
+<ul class="list-group list-group-flush">
+  {% for corso in lista_corsi %}
+
+  <li class="list-group-item active" aria-current="true">{{corso}}</li>
+
+  {% endfor %}
+</ul>
+<br />
+<a href="{{url_for('corsi',name='flask')}}">Corso Flask</a>
+{% else %}
+<p>Non ci sono corsi con questo nome</p>
+{% endif %} {%endblock content%}

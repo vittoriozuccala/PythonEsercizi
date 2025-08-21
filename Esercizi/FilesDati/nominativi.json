@@ -1,0 +1,10 @@
+{
+    "nome": "Vittori",
+    "cognome": "Zuccala",
+    "indirizzo" : {
+        "via": "Via Orsola Rossi Maffiotti, 3",
+        "citta": "Settimo T.se",
+        "cap": 10136
+    },
+    "hobbies": ["diving","basketball"]
+}

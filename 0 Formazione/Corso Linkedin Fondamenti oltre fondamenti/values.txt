@@ -1,0 +1,7 @@
+Prima riga del file
+Seconda riga ancora nel file
+Poi passiamo alla terza
+Ed infine alla quarta
+Tutte queste righe hanno un solo scopo
+Essere lette da un programma il 04
+E riversate nel values_out.txt

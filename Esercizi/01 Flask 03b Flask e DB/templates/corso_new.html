@@ -1,0 +1,14 @@
+{% extends 'index.html' %} {% block content %}
+<form action="{{url_for('corso_created')}}">
+  <label for="coursename">Nome del corso</label>
+  <input type="text" name="corso-nome" />
+  <label for="coursesubject">Oggetto del corso</label>
+  <input type="text" name="corso-oggetto" />
+  <input
+    type="submit"
+    class="btn btn-outline-secondary"
+    push::1.95.31::listener="1"
+    value="Submit"
+  />
+</form>
+{% endblock content %}

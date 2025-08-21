@@ -1,0 +1,21 @@
+{% extends 'index.html' %} {% block content %}
+<h1>Inserisci nuovo corso</h1>
+<form action="" method="POST">
+  {{ corso_simple_form.hidden_tag() }}
+  <br />
+  {{ corso_simple_form.name.label }} {{corso_simple_form.name() }}
+  <br />
+  {{ corso_simple_form.teacher.label }} {{corso_simple_form.teacher() }}
+  <br />
+  {{ corso_simple_form.is_active.label }} {{corso_simple_form.is_active() }}
+  <br />
+  {{ corso_simple_form.difficulty.label }} {{corso_simple_form.difficulty() }}
+  <br />
+  {{ corso_simple_form.platform.label }} {{corso_simple_form.platform() }}
+  <br />
+  {{ corso_simple_form.feedback.label }} {{corso_simple_form.feedback() }}
+  <br />
+  {{ corso_simple_form.submit.label }} {{corso_simple_form.submit() }}
+</form>
+
+{% endblock content%}

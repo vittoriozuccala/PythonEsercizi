@@ -1,0 +1,12 @@
+{% extends 'index.html' %} {% block content %}
+<h2>Informazioni inserite</h2>
+<ul>
+  <li>Nome corso: {{session["name"]}}</li>
+  <li>Insegnante: {{session["teacher"]}}</li>
+  <li>Attivo: {{session["is_active"]}}</li>
+  <li>Difficoltà: {{session["difficulty"]}}</li>
+  <li>Piattaforma: {{session["platform"]}}</li>
+  <li>Feedback: {{session["feedback"]}}</li>
+</ul>
+
+{% endblock %}

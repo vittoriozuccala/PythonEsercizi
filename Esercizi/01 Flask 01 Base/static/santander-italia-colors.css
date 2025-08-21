@@ -1,0 +1,149 @@
+/* Santander Italia Brand Colors (based on Banco Santander Basic Guidelines, 2020)
+   Primary red and tonal scale, plus white and black.
+   Hex sources: see official brand PDF.
+*/
+
+:root {
+  /* Primary */
+  --santander-red: #ec0000; /* Santander Red (Pantone 485 C) */
+  /* Tonal range (names are illustrative) */
+  --santander-red-900: #990000; /* Darkest */
+  --santander-red-800: #cc0000; /* Dark */
+  --santander-red-400: #ea6f5d; /* Mid tint */
+  --santander-red-200: #f0b998; /* Light tint */
+  --santander-red-100: #f5decf; /* Lighter tint */
+  --santander-red-50: #fbf1ea; /* Lightest tint */
+  --santander-white: #ffffff;
+  --santander-black: #000000;
+}
+
+/* Titoli */
+
+/* Background helpers */
+.bg-santander-red {
+  background-color: var(--santander-red);
+}
+.bg-santander-red-900 {
+  background-color: var(--santander-red-900);
+}
+.bg-santander-red-800 {
+  background-color: var(--santander-red-800);
+}
+.bg-santander-red-400 {
+  background-color: var(--santander-red-400);
+}
+.bg-santander-red-200 {
+  background-color: var(--santander-red-200);
+}
+.bg-santander-red-100 {
+  background-color: var(--santander-red-100);
+}
+.bg-santander-red-50 {
+  background-color: var(--santander-red-50);
+}
+.bg-santander-white {
+  background-color: var(--santander-white);
+}
+.bg-santander-black {
+  background-color: var(--santander-black);
+}
+
+/* Text helpers */
+.text-santander-red {
+  color: var(--santander-red);
+}
+.text-santander-red-900 {
+  color: var(--santander-red-900);
+}
+.text-santander-red-800 {
+  color: var(--santander-red-800);
+}
+.text-santander-red-400 {
+  color: var(--santander-red-400);
+}
+.text-santander-red-200 {
+  color: var(--santander-red-200);
+}
+.text-santander-red-100 {
+  color: var(--santander-red-100);
+}
+.text-santander-red-50 {
+  color: var(--santander-red-50);
+}
+.text-santander-white {
+  color: var(--santander-white);
+}
+.text-santander-black {
+  color: var(--santander-black);
+}
+
+/* Border helpers */
+.border-santander-red {
+  border-color: var(--santander-red);
+}
+.border-santander-black {
+  border-color: var(--santander-black);
+}
+.border-santander-white {
+  border-color: var(--santander-white);
+}
+
+/* Buttons */
+.btn-santander {
+  --btn-bg: var(--santander-red);
+  --btn-text: var(--santander-white);
+  --btn-border: var(--santander-red);
+  appearance: none;
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid var(--btn-border);
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: transform 120ms ease, filter 120ms ease,
+    background-color 120ms ease;
+}
+.btn-santander:hover {
+  filter: brightness(0.95);
+}
+.btn-santander:active {
+  transform: translateY(1px);
+}
+.btn-santander:focus-visible {
+  outline: 2px solid var(--santander-black);
+  outline-offset: 2px;
+}
+
+/* Secondary button (light background) */
+.btn-santander-outline {
+  --btn-text: var(--santander-red);
+  --btn-border: var(--santander-red);
+  background: transparent;
+  color: var(--btn-text);
+  border: 1.5px solid var(--btn-border);
+}
+.btn-santander-outline:hover {
+  background: var(--santander-red-50);
+}
+
+/* Links */
+.link-santander {
+  color: var(--santander-red);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 120ms ease;
+}
+.link-santander:hover {
+  border-color: currentColor;
+}
+
+/* Accessibility helpers for text on red backgrounds */
+.text-on-red {
+  color: var(--santander-white);
+}
+.text-on-light-red {
+  color: var(--santander-black);
+}

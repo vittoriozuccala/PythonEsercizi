@@ -1,0 +1,10 @@
+2025-08-12 10:42:24 DEBUG Message of Debug
+2025-08-12 10:42:24 INFO Message of Info
+2025-08-12 10:42:24 WARNING Message of Warning
+2025-08-12 10:42:24 ERROR Message of Error
+2025-08-12 10:42:24 CRITICAL Message of Critical
+2025-08-12 10:42:37 DEBUG Message of Debug
+2025-08-12 10:42:37 INFO Message of Info
+2025-08-12 10:42:37 WARNING Message of Warning
+2025-08-12 10:42:37 ERROR Message of Error
+2025-08-12 10:42:37 CRITICAL Message of Critical

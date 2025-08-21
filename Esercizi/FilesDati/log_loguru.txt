@@ -1,0 +1,41 @@
+2025-08-06 12:28:25.330 | DEBUG    | __main__:<module>:52 - That's it, beautiful and simple logging!
+2025-08-06 12:31:29.798 | DEBUG    | __main__:<module>:52 - That's it, beautiful and simple logging!
+2025-08-06 12:32:00.677 | DEBUG    | __main__:<module>:52 - FilesDati\log_loguru.txt
+2025-08-06 12:33:10.733 | DEBUG    | __main__:<module>:52 - FilesDati\log_loguru.txt
+2025-08-06 12:33:10.736 | ERROR    | __main__:nested:61 - What?!
+Traceback (most recent call last):
+
+  File "c:\Users\n219547\OneDrive - Santander Office 365\Documenti\RepositoryGIT\DWH-SantanderConsumerBank\80 Python\0 Formazione\Esercizi\05Top15libraries.py", line 63, in <module>
+    nested(0)
+    └ <function nested at 0x00000206194FAE80>
+
+> File "c:\Users\n219547\OneDrive - Santander Office 365\Documenti\RepositoryGIT\DWH-SantanderConsumerBank\80 Python\0 Formazione\Esercizi\05Top15libraries.py", line 59, in nested
+    func(5, c)
+    │       └ 0
+    └ <function func at 0x00000206194FAD40>
+
+  File "c:\Users\n219547\OneDrive - Santander Office 365\Documenti\RepositoryGIT\DWH-SantanderConsumerBank\80 Python\0 Formazione\Esercizi\05Top15libraries.py", line 55, in func
+    return a / b
+           │   └ 0
+           └ 5
+
+ZeroDivisionError: division by zero
+2025-08-06 14:14:46.558 | DEBUG    | __main__:<module>:52 - FilesDati\log_loguru.txt
+2025-08-06 14:14:46.566 | ERROR    | __main__:nested:61 - What?!
+Traceback (most recent call last):
+
+  File "c:\Users\n219547\OneDrive - Santander Office 365\Documenti\RepositoryGIT\DWH-SantanderConsumerBank\80 Python\0 Formazione\Esercizi\05Top15libraries.py", line 63, in <module>
+    nested(0)
+    └ <function nested at 0x000001D6EC5E77E0>
+
+> File "c:\Users\n219547\OneDrive - Santander Office 365\Documenti\RepositoryGIT\DWH-SantanderConsumerBank\80 Python\0 Formazione\Esercizi\05Top15libraries.py", line 59, in nested
+    func(5, c)
+    │       └ 0
+    └ <function func at 0x000001D6EC5E76A0>
+
+  File "c:\Users\n219547\OneDrive - Santander Office 365\Documenti\RepositoryGIT\DWH-SantanderConsumerBank\80 Python\0 Formazione\Esercizi\05Top15libraries.py", line 55, in func
+    return a / b
+           │   └ 0
+           └ 5
+
+ZeroDivisionError: division by zero

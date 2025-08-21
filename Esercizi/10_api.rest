@@ -1,0 +1,19 @@
+# Richiede il plugin REST client
+
+GET http://127.0.0.1:5000/incomes HTTP/1.1
+
+###
+
+GET http://127.0.0.1:5000/orchestratore HTTP/1.1
+
+###
+
+# Proviamo un inserimento
+# curl --request POST http://127.0.0.1:5000/insertincomes -H "Content-Type: application/json" --data "{\"amount\": 1200, \"description\":\"Lotteria\"}"
+# ATTENZIONE, dopo gli header, bisogna mettere uno spazio prima della {}
+POST http://127.0.0.1:5000/insertincomes HTTP/1.1
+Content-Type: application/json
+
+{"description":"Salario","amount":1800}
+
+
