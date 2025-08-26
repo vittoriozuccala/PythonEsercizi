@@ -8,8 +8,8 @@
 # import json
 
 config = {
-    "user": "n219547@eu.santanderconsumer.com",
-    "password": "Sella2025!",
+    "user": "mail",
+    "password": "pass",
     "url": "https://santandernet.sharepoint.com",
     "site": "https://santandernet.sharepoint.com/sites/DWHItaly"
 }
