@@ -3,6 +3,11 @@
 Video https://www.youtube.com/watch?v=AjsB6lM2-zw
 Pagina installazione: https://duckdb.org/docs/installation/?version=stable&environment=cli&platform=macos&download_method=direct
 
+# Estensioni
+
+- [Core Extension](https://duckdb.org/docs/stable/extensions/overview.html)
+- [Community Extension](https://duckdb.org/community_extensions/list_of_extensions)
+
 # Tipologie databases
 
 - OLTP sono transazionali fatti per scrivere bene in riga
@@ -17,9 +22,26 @@ Pagina installazione: https://duckdb.org/docs/installation/?version=stable&envir
 
 # Comandi
 
+Generare un set di dati per i test
+
+```sql
+    CALL dbgen(sf=0.1);
+```
+
 .open 'duck.db'
 show tables;
 describe table;
 
 Per leggere da una cartella di CSV
+
+```sql
 SELECT _ FROM 'cartella/_.csv'
+```
+
+# Client
+
+Per lanciare una serie di comandi prima di iniziare la sessione
+
+```bash
+    duckdb -init FILENAME
+```
